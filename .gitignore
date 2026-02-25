@@ -1,0 +1,36 @@
+# Git ignore for WP Washer WordPress Plugin
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if ever used for build tooling)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Composer (not used, but just in case)
+vendor/
+composer.lock
+
+# WordPress test suite
+tests/
+phpunit.xml
+.phpunit.result.cache
+
+# Build / dist artefacts
+*.zip
+*.tar.gz
+
+# Environment / secrets
+.env
+.env.*
+
+# Logs (runtime logs go in the DB, not files)
+*.log
